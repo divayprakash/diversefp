@@ -11,6 +11,7 @@ public class MainClass {
         AlgoFPGrowth algo = new AlgoFPGrowth();
         try {
             algo.runAlgorithm("mushroom.txt", "output_file.txt", 40.00);
+            algo.printStats();
         }
         catch (FileNotFoundException e){
             e.printStackTrace();
